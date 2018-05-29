@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<!--
+	Comments:
+	Experiment
+	Date 5/30/2018
+	Name: Jacques Favre
+	Language HTML 5, CSS 3, jquerry
+	Incude:
+	Slicknav responsive menu, courtesy of MIT http://slicknav.io Copyright (c) 2016 Josh Cope
+	Terms and Privacy, non comercial use only, courtesy of http://getterms.io/	
+	Featured Content Slider- (c) Dynamic Drive DHTML code library	
+	-->
+	
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jacques Favre Portfolio 2018</title>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="SlickNav/slicknav.css">
+<!-- 	3 script for responsive menu Changed http to https to work on gitHub-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="SlickNav/jquery.slicknav.js"></script>
+	<script>
+	$(document).ready(function(){
+	$('#menu').slicknav();
+	});
+	</script>
+
+
+
+<link rel="stylesheet" type="text/css" href="contentslider.css" />
+
+<script type="text/javascript" src="contentslider.js">
+
+/***********************************************
+* Featured Content Slider- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* Please keep this notice intact
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+***********************************************/
+
+</script>
+
+
+</head>
+
+<body>
+	<header>
+		<h2><a href="index.html" class="current">Portfolio</a></h2>
+		<h3>Jacques Favre</h3>
+		
+		<nav id="mobile_menu"></nav>
+					<nav id="menu">
+    			<ul>
+        			<li><a href="index.html" class="current">Home</a></li>
+        			<li><a href="pages/contact.html">Contact</a></li>
+        			<li><a>Projects</a>
+        				<ul>
+        					<li><a href="pages/project1.html">Bearing</a></li> 
+        					<li><a href="pages/project2.html">Clock</a></li>        		
+        				</ul>       	
+        			</li>
+          		</ul>
+			</nav>
+	</header>
+
+	<main>
+<!-- 		<section> -->
+	
+<!-- 			<h1>A Factory on the Desktop!</h1> -->
+    			
+<!-- 			<img src="images/printer.jpg" alt="My printer">  -->
+		
+<!-- 					<p>My goal is to inspire you and help you be successful with this new technology.<br>
+					I have two projects to share:</p>
+					<ul>
+					<li>Ball bearings</li>
+					<li>Clock</li></ul>
+					<p>You can buy them or learn how to make them.
+					</p>					 -->
+					
+<!-- 					You can buy my own production, and you can learn from my examples.<br>
+					Today, 3D printing allows everyone to have a fabrication machine at their finger’s tips. They are many ways to use this new tool, but my focus will be on two capabilities that this technology can provide.<br>
+					Build a product that contains multiple moving parts all at once, like ball and roller bearings.<br>
+					And build finished mechanical parts, like gears that make it possible to build a mechanical clock.					
+					</p> -->
+<!-- 					<h2>Let's go create together!</h2> -->
+
+
+		
+<!-- 					<p><a href="mailto:jacqueshfavre@gmail.com?&subject=Jacques%20Favre%20Portfolio"><strong>Email me</strong></a> with questions or comments.</p> -->
+   
+<!-- 		</section> -->
+<br>
+			<br>
+			<br>
+			<h2>Example 1</h2>
+			
+	<br>
+			<br>
+			<br>		
+
+<!--Inner content DIVs should always carry "contentdiv" CSS class-->
+<!--Pagination DIV should always carry "paginate-SLIDERID" CSS class-->
+
+<div id="slider1" class="sliderwrapper">
+<!-- <div id="paginate-slider1" class="pagination" style="text-align:center"></div> -->
+<!-- Content 1 Here.  -->
+<div class="contentdiv"><img src="images/printer.jpg" alt="My printer"><br />
+<p></p><a href="javascript:featuredcontentslider.jumpTo('slider1', 3)">Go to 3rd slide</a></p>
+
+</div>
+<!-- Content 2 Here. -->
+<div class="contentdiv"><img src="images/bearings.jpg" alt="My printer">
+</div>
+<!-- Content 3 Here. -->
+<div class="contentdiv"><img src="images/clock.jpg" alt="My printer">
+</div>
+
+<!-- Content 4 Here. -->
+<div class="contentdiv">
+<!-- <div style="overflow-y:auto;"> -->
+<div class="ex1"><img src="images/clockP.jpg" alt="My printer">
+
+        	<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>			
+</div>
+</div><!-- End Content 4 Here. -->
+</div>
+
+<div id="paginate-slider1" class="pagination" style="text-align:center"></div>
+
+</div>
+
+<script type="text/javascript">
+
+featuredcontentslider.init({
+	id: "slider1",  //id of main slider DIV
+	contentsource: ["inline", ""],  //Valid values: ["inline", ""] or ["ajax", "path_to_file"]
+	toc: "#increment",  //Valid values: "#increment", "markup", ["label1", "label2", etc]
+	nextprev: ["", ""],  //labels for "prev" and "next" links. Set to "" to hide.
+	revealtype: "click", //Behavior of pagination links to reveal the slides: "click" or "mouseover"
+	enablefade: [true, 0.2],  //[true/false, fadedegree]
+	autorotate: [true, 3000],  //[true/false, pausetime]
+	onChange: function(previndex, curindex, contentdivs){  //event handler fired whenever script changes slide
+		//previndex holds index of last slide viewed b4 current (0=1st slide, 1=2nd etc)
+		//curindex holds index of currently shown slide (0=1st slide, 1=2nd etc)
+	}
+})
+
+</script>
+
+
+
+
+<br />
+
+
+	</main>
+	<footer>
+		<p><a href="pages/termsAndPrivacy.html">Terms and Privacy</a>&nbsp;&nbsp;&copy; 2018	Jacques Favre ajfavre.com</p>
+	</footer>
+</body>
+</html>
